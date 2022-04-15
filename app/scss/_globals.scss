@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem;
+  color: $white;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: $white;
+
+  @media screen and (max-width: 25rem) {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: bold;
+  line-height: 165%;
+  color: $light-grey;
+
+  @media screen and (max-width: 25rem) {
+    font-size: 13px;
+  }
+}

@@ -1,0 +1,222 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  font-size: 0.9375rem;
+  color: white;
+}
+
+h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: white;
+}
+
+@media screen and (max-width: 25rem) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+p {
+  font-size: 0.9375rem;
+  font-weight: bold;
+  line-height: 165%;
+  color: #959eac;
+}
+
+@media screen and (max-width: 25rem) {
+  p {
+    font-size: 13px;
+  }
+}
+
+.main {
+  min-height: 100vh;
+  background: #121417;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main .card {
+  max-width: 25.75rem;
+  height: 25.75rem;
+  width: calc(100% - 2 * 1.5625rem);
+  background-color: #252d37;
+  border-radius: 40px;
+  padding: 1.8125rem;
+}
+
+@media screen and (max-width: 400px) {
+  .main .card {
+    padding: 1.5625rem;
+    height: 22.5rem;
+  }
+}
+
+.main .card__star {
+  width: 3.125rem;
+  height: 3.125rem;
+  background-color: #363d46;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 1.3125rem;
+}
+
+@media screen and (max-width: 400px) {
+  .main .card__star {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+}
+
+.main .card__title {
+  margin-bottom: 1.125rem;
+}
+
+@media screen and (max-width: 400px) {
+  .main .card__title {
+    margin-bottom: 1rem;
+  }
+}
+
+.main .card__text {
+  margin-bottom: 1.8125rem;
+}
+
+.main .card__ratings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.625rem;
+}
+
+.main .card__ratings button {
+  -webkit-transition: 100ms ease all;
+  transition: 100ms ease all;
+  cursor: pointer;
+  display: block;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 50%;
+  background-color: #363d46;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 700;
+  font-size: 1.0625rem;
+}
+
+.main .card__ratings button.active {
+  background-color: #fb7413;
+  opacity: 1;
+}
+
+.main .card__ratings button.active:hover {
+  background-color: #fb7413;
+}
+
+.main .card__ratings button:hover {
+  background-color: #7c8798;
+  opacity: 1;
+}
+
+@media screen and (max-width: 400px) {
+  .main .card__ratings button {
+    width: 2.6875rem;
+    height: 2.6875rem;
+  }
+}
+
+.main .card__submit {
+  border: none;
+  width: 100%;
+  height: 2.8125rem;
+  background-color: #fb7413;
+  border-radius: 1.375rem;
+  font-size: 0.9375rem;
+  letter-spacing: 0.1875rem;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+  -webkit-transition: all ease 150ms;
+  transition: all ease 150ms;
+  cursor: pointer;
+}
+
+.main .card__submit:hover {
+  color: #fb7413;
+  background-color: white;
+}
+
+@media screen and (max-width: 400px) {
+  .main .card__submit {
+    font-size: 0.875rem;
+  }
+}
+
+.main .card .thank-you__inner {
+  text-align: center;
+}
+
+.main .card .thank-you__inner .img {
+  margin-bottom: 1.875rem;
+}
+
+.main .card .thank-you__inner .rating {
+  height: 1.875rem;
+  width: 12rem;
+  margin: 0 auto;
+  background-color: #363d46;
+  border-radius: 0.9375rem;
+  margin-bottom: 1.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main .card .thank-you__inner .rating p {
+  color: #fb7413;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+.main .card .thank-you__inner h1 {
+  font-size: 1.625rem;
+  margin-bottom: 1rem;
+}
+/*# sourceMappingURL=styles.min.css.map */

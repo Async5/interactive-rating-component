@@ -1,0 +1,145 @@
+.main {
+  min-height: 100vh;
+  background: $very-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .card {
+    max-width: 25.75rem;
+    height: 25.75rem;
+    width: calc(100% - 2 * 1.5625rem);
+    background-color: $dark-blue;
+    border-radius: 40px;
+    padding: 1.8125rem;
+
+    @media screen and (max-width: 400px) {
+      padding: 1.5625rem;
+      height: 22.5rem;
+    }
+
+    &__star {
+      width: 3.125rem;
+      height: 3.125rem;
+      background-color: #363d46;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 1.3125rem;
+
+      @media screen and (max-width: 400px) {
+        width: 2.5rem;
+        height: 2.5rem;
+      }
+    }
+
+    &__title {
+      margin-bottom: 1.125rem;
+
+      @media screen and (max-width: 400px) {
+        margin-bottom: 1rem;
+      }
+    }
+
+    &__text {
+      margin-bottom: 1.8125rem;
+    }
+
+    &__ratings {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1.625rem;
+
+      button {
+        &.active {
+          background-color: $orange;
+          opacity: 1;
+
+          &:hover {
+            background-color: $orange;
+          }
+        }
+        transition: 100ms ease all;
+        cursor: pointer;
+        display: block;
+        width: 3.125rem;
+        height: 3.125rem;
+        border: none;
+        border-radius: 50%;
+        background-color: #363d46;
+        color: rgba(255, 255, 255, 0.6);
+        font-weight: 700;
+        font-size: 1.0625rem;
+
+        &:hover {
+          background-color: $medium-grey;
+          opacity: 1;
+        }
+
+        @media screen and (max-width: 400px) {
+          width: 2.6875rem;
+          height: 2.6875rem;
+        }
+      }
+    }
+
+    &__submit {
+      border: none;
+      width: 100%;
+      height: 2.8125rem;
+      background-color: $orange;
+      border-radius: 1.375rem;
+      font-size: 0.9375rem;
+      letter-spacing: 0.1875rem;
+      text-transform: uppercase;
+      color: $white;
+      font-weight: 700;
+      transition: all ease 150ms;
+      cursor: pointer;
+
+      &:hover {
+        color: $orange;
+        background-color: $white;
+      }
+
+      @media screen and (max-width: 400px) {
+        font-size: 0.875rem;
+      }
+    }
+
+    .thank-you {
+      &__inner {
+        text-align: center;
+
+        .img {
+          margin-bottom: 1.875rem;
+        }
+
+        .rating {
+          height: 1.875rem;
+          width: 12rem;
+          margin: 0 auto;
+          background-color: #363d46;
+          border-radius: 0.9375rem;
+          margin-bottom: 1.8125rem;
+
+          p {
+            color: $orange;
+            font-weight: 300;
+            font-size: 14px;
+          }
+
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+
+        h1 {
+          font-size: 1.625rem;
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+}
